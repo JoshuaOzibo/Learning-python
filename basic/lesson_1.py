@@ -80,3 +80,44 @@ else:
 # loops
 for number in range(4):
     print("multiple times", number)
+
+
+    # nested loop
+# for x in range(5):
+#     for y in range(3):
+        # print(f"({x}, {y})")
+
+print(type(range))
+
+# while loop
+# numberCount = 100
+# while numberCount > 0:
+#     print(numberCount)
+#     numberCount //= 2
+
+evenCount = 0
+for fullNum in range(1, 10):
+    if fullNum % 2 == 0:
+        evenCount += 1
+        print(fullNum)
+    
+print(f"the total num of even num is {evenCount}")
+
+# functions
+def greet(name):
+    print(f"Hello {name}")
+
+greet('Joshua')
+
+def decrease(number, count = 5):
+    return number - count
+print(decrease(10))
+
+
+def multiple_numbers(*numbers):
+    totalNum = 1
+    for number in numbers:
+        totalNum *= number
+    return totalNum
+
+# print(multiple_numbers(1, 2, 3, 4, 5))
